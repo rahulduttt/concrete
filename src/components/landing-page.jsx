@@ -41,13 +41,13 @@ export function LandingPage() {
           <div
             className="container flex flex-col items-center justify-center px-4 space-y-4 md:px-6">
             <div
-              className="inline-block rounded-lg bg-gray-100 border border-gray-200 dark:bg-gray-800 dark:border-gray-800 dark:border-gray-800">
-              <img
+              className="inline-block rounded-lg bg-gray-100 border border-gray-200 dark:bg-gray-800 dark:border-gray-800">
+              {/* <img
                 alt="Hero"
                 className="aspect-[4/1] object-cover object-top rounded-t-lg"
                 height="225"
                 src="/placeholder.svg"
-                width="900" />
+                width="900" /> */}
             </div>
             <div className="space-y-2 text-center">
               <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl">Quality Concrete Services</h1>

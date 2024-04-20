@@ -189,7 +189,7 @@ export function LandingPageV2() {
                   Get in Touch
                 </h2>
                 <p className="mt-4 text-gray-400">
-                  Fill out the form below and we'll get back to you as soon as
+                  Fill out the form below and we&apos;ll get back to you as soon as
                   possible.
                 </p>
                 <form className="mt-8 space-y-4">
@@ -236,7 +236,7 @@ export function LandingPageV2() {
                   Leave a Review
                 </h2>
                 <p className="mt-4 text-gray-400">
-                  We'd love to hear your thoughts on our services.
+                  We&apos;d love to hear your thoughts on our services.
                 </p>
                 <form className="mt-8 space-y-4">
                   <div>
