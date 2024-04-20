@@ -79,7 +79,9 @@ export function LandingPageV2() {
               Contact
             </Link>
           </nav>
-          <Button variant="primary" className="text-neutral-400">Get a Quote</Button>
+          <Button variant="primary" className="text-neutral-400">
+            Get a Quote
+          </Button>
         </div>
       </header>
       <main className="flex-1 dark:bg-gray-950 dark:text-gray-400">
@@ -88,6 +90,7 @@ export function LandingPageV2() {
             <CarouselContent>
               <CarouselItem>
                 <Image
+                  width={1200}
                   alt="Concrete work"
                   className="aspect-[3/1] object-cover rounded-md"
                   src={CarouselImage1}
@@ -96,6 +99,7 @@ export function LandingPageV2() {
               </CarouselItem>
               <CarouselItem>
                 <Image
+                  width={1200}
                   alt="Concrete work"
                   className="aspect-[3/1] object-cover rounded-md"
                   src={CarouselImage2}
@@ -104,6 +108,7 @@ export function LandingPageV2() {
               </CarouselItem>
               <CarouselItem>
                 <Image
+                  width={1200}
                   alt="Concrete work"
                   className="aspect-[3/1] object-cover rounded-md"
                   src={CarouselImage3}
@@ -112,6 +117,7 @@ export function LandingPageV2() {
               </CarouselItem>
               <CarouselItem>
                 <Image
+                  width={1200}
                   alt="Concrete work"
                   className="aspect-[3/1] object-cover rounded-md"
                   src={CarouselImage4}
@@ -189,8 +195,8 @@ export function LandingPageV2() {
                   Get in Touch
                 </h2>
                 <p className="mt-4 text-gray-400">
-                  Fill out the form below and we&apos;ll get back to you as soon as
-                  possible.
+                  Fill out the form below and we&apos;ll get back to you as soon
+                  as possible.
                 </p>
                 <form className="mt-8 space-y-4">
                   <div>
