@@ -56,7 +56,7 @@ export function LandingPageV2() {
           <nav className="hidden space-x-4 md:flex">
             <Link
               className="text-sm font-medium hover:underline underline-offset-4 text-gray-400"
-              href="#"
+              href="#services"
             >
               Services
             </Link>
@@ -74,7 +74,7 @@ export function LandingPageV2() {
             </Link>
             <Link
               className="text-sm font-medium hover:underline underline-offset-4 text-gray-400"
-              href="#"
+              href="#contact"
             >
               Contact
             </Link>
@@ -129,7 +129,10 @@ export function LandingPageV2() {
             <CarouselNext />
           </Carousel>
         </section>
-        <section className="w-full py-12 md:py-24 dark:bg-gray-950 dark:text-gray-400">
+        <section
+          id="services"
+          className="w-full py-12 md:py-24 dark:bg-gray-950 dark:text-gray-400"
+        >
           <div className="flex-col items-center">
             <div className="container grid items-center gap-4 px-4 text-center md:px-6 lg:gap-10 m-auto">
               <div className="space-y-3">
@@ -187,7 +190,10 @@ export function LandingPageV2() {
           </div>
         </section>
 
-        <section className="w-full py-12 md:py-24 dark:bg-gray-950 dark:text-gray-400">
+        <section
+          id="contact"
+          className="w-full py-12 md:py-24 dark:bg-gray-950 dark:text-gray-400"
+        >
           <div className="container mx-auto px-4 md:px-6">
             <div className="grid gap-8 md:grid-cols-2">
               <div>
@@ -232,7 +238,7 @@ export function LandingPageV2() {
                       rows={4}
                     />
                   </div>
-                  <Button type="submit" variant="primary">
+                  <Button type="submit" variant="outline">
                     Submit
                   </Button>
                 </form>
@@ -281,7 +287,7 @@ export function LandingPageV2() {
                   <Button
                     className="text-gray-400"
                     type="submit"
-                    variant="primary"
+                    variant="outline"
                   >
                     Submit Review
                   </Button>
@@ -311,7 +317,7 @@ export function LandingPageV2() {
             </Link>
             <Link
               className="text-sm font-medium hover:underline underline-offset-4 text-gray-400"
-              href="#"
+              href="#contact"
             >
               Contact
             </Link>
