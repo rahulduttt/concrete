@@ -40,6 +40,7 @@ import {
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { Testimonials } from "./testimonials";
 
 export function LandingPageV2() {
   const COMPANYNAME = "Wise Concreting Services";
@@ -295,6 +296,9 @@ export function LandingPageV2() {
               </div>
             </div>
           </div>
+        </section>
+        <section className="w-full py-12 md:py-24 px-24">
+          <Testimonials />
         </section>
       </main>
       <footer className="bg-gray-800 dark:bg-gray-950 dark:text-gray-400">
