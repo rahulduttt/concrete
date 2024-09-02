@@ -41,9 +41,46 @@ import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Testimonials } from "./testimonials";
+import { ContactForm } from "./ContactForm";
 
 export function LandingPageV2() {
   const COMPANYNAME = "Wise Concreting Services";
+
+  const submitContactForm = async (formData) => {
+    "use server";
+    const name = formData.get('name');
+    const email = formData.get('email');
+    const message = formData.get('message');
+
+    if (!name || !email || !message) {
+      console.error('Please fill in all fields');
+      return;
+    }
+
+    console.log('Submitting contact form:', name, email, message);
+
+    try {
+      const response = await fetch('https://hooks.zapier.com/hooks/catch/19599392/2ud6nyz/', {
+        method: 'POST',
+        body: JSON.stringify({
+          name,
+          email,
+          message,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to submit contact form');
+        return false;
+      }
+
+    } catch (error) {
+      console.error('Error submitting contact form:', error);
+      return false;
+    }
+    return true;
+  };
+
   return (
     <div key="1" className="flex flex-col min-h-[100dvh] dark:bg-gray-950">
       <header className="bg-gray-950 shadow-sm">
@@ -197,53 +234,7 @@ export function LandingPageV2() {
         >
           <div className="container mx-auto px-4 md:px-6">
             <div className="grid gap-8 md:grid-cols-2">
-              <div>
-                <h2 className="text-3xl font-bold text-gray-400">
-                  Get in Touch
-                </h2>
-                <p className="mt-4 text-gray-400">
-                  Fill out the form below and we&apos;ll get back to you as soon
-                  as possible.
-                </p>
-                <form className="mt-8 space-y-4">
-                  <div>
-                    <Label className="text-gray-400" htmlFor="name">
-                      Name
-                    </Label>
-                    <Input
-                      className="bg-gray-800 text-white"
-                      id="name"
-                      required
-                      type="text"
-                    />
-                  </div>
-                  <div>
-                    <Label className="text-gray-400" htmlFor="email">
-                      Email
-                    </Label>
-                    <Input
-                      className="bg-gray-800 text-white"
-                      id="email"
-                      required
-                      type="email"
-                    />
-                  </div>
-                  <div>
-                    <Label className="text-gray-400" htmlFor="message">
-                      Message
-                    </Label>
-                    <Textarea
-                      className="bg-gray-800 text-white"
-                      id="message"
-                      required
-                      rows={4}
-                    />
-                  </div>
-                  <Button type="submit" variant="outline">
-                    Submit
-                  </Button>
-                </form>
-              </div>
+              <ContactForm submitContactForm={submitContactForm} />
               <div>
                 <h2 className="text-3xl font-bold text-gray-400">
                   Leave a Review
