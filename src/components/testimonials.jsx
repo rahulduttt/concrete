@@ -45,6 +45,14 @@ export function Testimonials() {
           <TestimonialCard name="Emily Davis" role="Designer, Stark Industries" quote="I love this product! It has made my life so much easier." />
           <TestimonialCard name="Sarah Lee" role="Project Manager, Stark Industries" quote="This product has exceeded all my expectations. Highly recommended!" />
           <TestimonialCard name="David Kim" role="Sales Manager, Globex Inc." quote="This product has been a game-changer for my business. Highly recommended!" />
+
+          {/* Duplicate set of cards */}
+          <TestimonialCard name="John Doe" role="CEO, Acme Inc." quote="Incredible service and products. Highly recommended!" />
+          <TestimonialCard name="Jane Smith" role="Marketing Manager, XYZ Corp." quote="I've been using this product for years and it's a game-changer!" />
+          <TestimonialCard name="Michael Johnson" role="Software Engineer, Globex Inc." quote="This is the best product I've ever used. Highly recommended!" />
+          <TestimonialCard name="Emily Davis" role="Designer, Stark Industries" quote="I love this product! It has made my life so much easier." />
+          <TestimonialCard name="Sarah Lee" role="Project Manager, Stark Industries" quote="This product has exceeded all my expectations. Highly recommended!" />
+          <TestimonialCard name="David Kim" role="Sales Manager, Globex Inc." quote="This product has been a game-changer for my business. Highly recommended!" />
         </div>
       </div>
       <style jsx>{`
