@@ -288,7 +288,7 @@ export function LandingPageV2() {
             </div>
           </div>
         </section>
-        <section className="w-full py-12 md:py-24 px-24">
+        <section className="w-full py-12 md:py-24 md:px-24">
           <Testimonials />
         </section>
       </main>

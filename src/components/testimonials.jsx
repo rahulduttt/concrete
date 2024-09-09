@@ -80,7 +80,7 @@ function TestimonialCard({ name, role, quote }) {
           </Avatar>
           <h3 className="text-lg font-semibold mb-2">{name}</h3>
           <p className="text-muted-foreground text-sm mb-4">{role}</p>
-          <p className="text-center">&quot;{quote}&quot;</p>
+          <p className="text-center text-wrap">&quot;{quote}&quot;</p>
         </CardContent>
       </Card>
     </div>
